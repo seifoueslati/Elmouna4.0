@@ -1,0 +1,120 @@
+<!--
+  ~ LEAPS - Low Energy Accurate Positioning System.
+  ~
+  ~ Copyright (c) 2016-2018, LEAPS. All rights reserved.
+  -->
+<html>
+<head>
+    <style>
+        li {
+            margin: 3pt;
+        }
+        img {
+            margin: 5pt;
+        }
+    </style>
+</head>
+<body>
+<h1>Prepare the Anchors</h1>
+<ol>
+    <li> Select 4 units to be anchors</li>
+    <li>Mount them high on walls or tripods, preferably above head height</li>
+    <li>Ensure they are all on the same plane</li>
+    <li>Arrange them approximately in a rectangular shape</li>
+    <li>Power them using USB mains power supplies or USB battery packs</li>
+</ol>
+
+<center>
+<img width="80%" src="node-installation.png">
+</center>
+
+<h1>Prepare the Tags</h1>
+<ol>
+    <li>Select 1 unit to be a tag</li>
+    <li>Power the tag by either (a) connecting a USB battery pack or (b) opening the enclosure and inserting a rechargeable battery</li>
+</ol>
+
+<h1>Prepare the Tablet</h1>
+<ol>
+    <li>Download the .apk Android application file (Decawave DRTLS Manager) from the Decawave website to your tablet</li>
+    <li>Follow the instructions on the tablet to install the application</li>
+</ol>
+
+<h1>Create a Network</h1>
+
+<ol>
+    <li>Open the Decawave DRTLS Manager application</li>
+    <li>Tap ‘Start Device Discovery’</li>
+    <li>Tap one of the discovered devices and an option will appear to name a network – this device will be added to that network</li>
+    <li>Repeat for the remaining devices to add them to this network</li>
+    <li>All units will initially appear as tags in ‘passive’ UWB mode</li>
+</ol>
+
+<h1>Configure the Units as Anchors or Tags</h1>
+
+Tap the network and then tap each device in turn to configure it:
+<ol>
+    <li>First, identify the unit by unchecking the LED checkbox and tap accept button in upper right corner to save.
+        The LEDs on that device will turn off.</li>
+    <li>To configure the 4 anchors:
+        <ol type="a">
+            <li>Set the ‘Node Type’ to ‘Anchor’</li>
+            <li>Set ‘UWB’ to ‘Active’</li>
+            <li>For any one of the anchors, check the ‘Initiator’ box (there must always be one initiator in the network)</li>
+            <li>Tap accept button in upper right corner to save</li>
+        </ol>
+    </li>
+    <li>To configure the tag:
+        <ol type="a">
+            <li>Set the ‘Node Type’ to ‘Tag’</li>
+            <li>Set ‘UWB’ to ‘Active’</li>
+            <li>Set the location rate to a fast rate be selecting:  ‘100 ms/10 Hz’</li>
+            <li>Select ‘responsive mode’, ‘stationary detection’ and ‘location engine’</li>
+            <li>Tap accept button in upper right corner to save</li>
+        </ol>
+    </li>
+</ol>
+
+<a name="autopositioning">
+<h1>Auto-Position the Anchors (for up to 4 anchors)</h1>
+</a>
+
+<i>
+    Note:  Using the Auto-Positioning function to automatically retrieve anchor locations is a <u>demonstration-only feature</u>.  For a commercial installation this feature should not be used.  Accurately measured anchor positions should be entered manually (see below).
+</i>
+<ol>
+    <li>From the ‘Network Details’ screen, tap the “Auto-Position” button in the pull-down menu on the upper right</li>
+    <li>A list of anchors (within Bluetooth range) appears</li>
+    <li>Re-order the anchors in the list to match their locations in the room:
+        <ol type='a'>
+            <li>Order the anchors to be anti-clockwise in the room</li>
+            <li>The 1st anchor in the list is the (0,0) co-ordinate</li>
+            <li>The 2nd anchor is to the right of the 1st (on the x-axis)</li>
+            <li>The 3rd anchor should be positioned ‘above’ the 2nd, as it is viewed on the grid</li>
+            <li>The 4th anchor should be positioned ‘above’ the 1st anchor</li>
+        </ol>
+    </li>
+    <li>Tap “Measure” to start the auto-positioning
+        <center>
+        <img src="auto-positioning.png" width="80%"/>
+        </center>
+    </li>
+
+    <li>Preview locations before saving by tapping ‘PREVIEW’</li>
+    <li>Enter heights of the anchors by tapping ‘Z-AXIS’</li>
+    <li>Save the anchors setup by tapping ‘SAVE’</li>
+</ol>
+
+
+<a name="manual">
+<h1>Manually Position the Anchors</h1>
+</a>
+
+The co-ordinates of the anchors can be measured and entered manually in the settings screen of each anchor.
+<ol>
+    <li>From the ‘Network Details’ screen, edit each anchor by tapping</li>
+    <li>Enter the x,y,z co-ordinate in the ‘position’ section</li>
+    <li>Tap accept button in the upper right corner to save</li>
+</ol>
+</body>
+</html>
