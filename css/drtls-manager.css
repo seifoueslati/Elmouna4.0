@@ -1,0 +1,182 @@
+/**
+ * LEAPS - Low Energy Accurate Positioning System.
+ *
+ * Main UI CSS file.
+ *
+ * Copyright (c) 2016-2018, LEAPS. All rights reserved.
+ *
+ */
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-size: 15px;
+}
+#scene {
+    width: 50%; 
+    height: 50%; 
+    position: absolute;
+}
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-color: white;
+    border-width: 20px 10px;
+}
+#buttons {
+    position: absolute;
+    right: 0px;
+}
+#buttons button, #buttons a {
+    margin: 2px 0 0 0;
+    padding: .5em .7em;
+}
+#ui-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 280px;
+    height: 100%;
+}
+#ui-nodes {
+    overflow-y: auto;
+    height: calc(100% - 35px);
+}
+#ui-nodes h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    display: block;
+    text-align: left;
+    padding: 5px;
+    margin: 2px 0;
+}
+.node-ui .color-mark {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 5px;
+    border: solid 1px #888888;
+}
+input.node-pos {
+    width: 56px;
+    margin-right: 5px;
+    font-size: 11px;
+}
+.node-name {
+    width: 200px;
+    word-wrap: break-word;
+}
+.node-id {
+    float: right;
+    font-weight: normal;
+    color: #888888;
+    font-size: 11px;
+}
+.node-position, .node-counters, .node-ip {
+    font-size: 11px;
+    font-weight: normal;
+    color: #888888;
+    clear: both;
+}
+.node-ip {
+    float: right;
+}
+.node-position, .node-counters {
+    margin-left: 22px;
+}
+.node-position .node-coord {
+    float: left;
+    width: 60px;
+    margin-right: 5px;
+}
+.node-counters .counter {
+    width: 45%;
+    display: block;
+    float: left;
+    margin-right: 4%;
+}
+.node-counters .counter .title {
+    width: 50px;
+    text-align: left;
+}
+.node-counters .counter .value {
+    text-align: right;
+    float: none;
+}
+#node-cfg-dialog table,
+#world-dialog table{
+    width: 100%;
+}
+.ui-hr {
+    padding: 0;
+}
+.ui-accordion .ui-accordion-content {
+    padding: 0 5px;
+}
+#node-search {
+    padding: .5em .5em .5em .7em;
+}
+#node-type-gateway-data .node-id {
+    display: none;
+}
+.ui-node-search input {
+    font-size: 15px;
+    width: 250px;
+}
+#status-left {
+    position: absolute;
+    bottom: .5em;
+    right: 35.5em;
+    padding: .5em .5em .5em 0;
+}
+#node-messages textarea {
+    width: 100%;
+    height: 5em;
+}
+tr.ui-send-button {
+    text-align: right;
+}
+.ui-received-time {
+    float: right;
+    color: #888888;
+}
+.ui-data-overwrite {
+    float: left;
+}
+input.long {
+    width: 320px;
+}
+.ui-data-length {
+    margin-right: 15px;
+}
+#hamburger {
+    display: inline-block;
+    position: relative;
+}
+#button-hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 2px;
+}
+/*#button-hamburger span:last-child {
+    margin-bottom: 0;
+}*/
+#hamburger-contents {
+    display: none;
+    position: absolute;
+    width: 200px;
+}
+#hamburger-contents .ui-button {
+    width: 200px;
+    text-align: left;
+}
+#hamburger-contents button.ui-button {
+    width: 200px;
+}
+#hamburger-contents a.ui-button {
+    width: 177px;
+}
