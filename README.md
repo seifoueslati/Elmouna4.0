@@ -3,12 +3,12 @@
   <p align="center">
     Elmouna4.0 2019/2020
     <br />
-   <h1> <a href="https://www.linkedin.com/in/seif-oueslati-212840134/"><strong>My Linkedin</strong></a></h1>
+   <h3> <a href="https://www.linkedin.com/in/seif-oueslati-212840134/"><strong>My Linkedin</strong></a></h3>
     <br />
     <br />
-    <h1><a href="https://drive.google.com/file/d/1D1Ddr9j0IVEz1UrKeFOZToUXGxq5q0dy/view?usp=sharing">View Demo</a>
+   <center> <h1><a href="https://drive.google.com/file/d/1D1Ddr9j0IVEz1UrKeFOZToUXGxq5q0dy/view?usp=sharing">View Demo</a>
     ·
-    <a href="https://drive.google.com/file/d/1RKY14AvIPLlwGabj7hZCkPybK6mfbUPq/view?usp=sharing">View com vid</a></h1>
+    <a href="https://drive.google.com/file/d/1RKY14AvIPLlwGabj7hZCkPybK6mfbUPq/view?usp=sharing">View com vid</a></h1></center>
     
   </p>
 
