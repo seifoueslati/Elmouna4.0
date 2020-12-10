@@ -12,7 +12,7 @@ Actually, my project is treating the warehousing domain. It consists of implemen
 The tracked positions can be displayed on a map over a dashboard that helps in the monitoring task and offers many other functionalities.
 
 
- ![image](https://keep.google.com/u/2/media/v2/13LiIE73tX8sVEYqsllCg45Rr47yqMHwYDed-yzCaHuQnktwVs9eAf80MDCCWyg/1CXJQoXl9KUtrifhny7_xhAjrBIYADhod9aYiuaIm5SCvGYFpmvPCCBC9TeHy62E?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=600)
+ ![image](https://keep.google.com/u/2/media/v2/13LiIE73tX8sVEYqsllCg45Rr47yqMHwYDed-yzCaHuQnktwVs9eAf80MDCCWyg/1CXJQoXl9KUtrifhny7_xhAjrBIYADhod9aYiuaIm5SCvGYFpmvPCCBC9TeHy62E?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=1600)
  
 
 The purpous of this project is to conceive an indoor positioning IoT based system inside the warehouse using decawave’s nodes as IoT sensors. This involves two main phases:
