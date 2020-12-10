@@ -1,11 +1,16 @@
 # ElMouna4.0
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+  <p align="center">
+    An awesome README template to jumpstart your projects!
+    <br />
+    <a href="https://www.linkedin.com/in/seif-oueslati-212840134/"><strong>My Linkedin »</strong></a>
+    <br />
+    <br />
+    <a href="https://drive.google.com/file/d/1D1Ddr9j0IVEz1UrKeFOZToUXGxq5q0dy/view?usp=sharing">View Demo</a>
+    ·
+    <a href="https://drive.google.com/file/d/1RKY14AvIPLlwGabj7hZCkPybK6mfbUPq/view?usp=sharing">View com vid</a>
+    
+  </p>
 
 
 
