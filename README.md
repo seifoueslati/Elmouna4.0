@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-![image](https://github.com/othneildrew/Best-README-Template/raw/master/images/logo.png)
 
 With the rise of nomadism and mobility, a strong need for localization emerged and became an active research field. Localization consists of determining positions of a mobile entity that could be people, equipment, and other objects around. This is called «positioning». It can be classified into two types «outdoor positioning» and «indoor positioning» depending 
 on the environment. Outdoor positioning is relatively easy thanks to satellites: GPS (Global Positioning  System) but for indoor positioning, it’s another story, the determination of a position can be complicated and remains hard to handle. In fact, GPS is not suitable to establish indoor locations, since it is limited to the outside due to signal attenuation caused by obstacles. 
