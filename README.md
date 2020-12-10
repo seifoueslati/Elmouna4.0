@@ -1,7 +1,7 @@
 # ElMouna4.0
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
+![image](https://github.com/othneildrew/Best-README-Template/raw/master/images/logo.png)
 With the rise of nomadism and mobility, a strong need for localization emerged and became an active research field. Localization consists of determining positions of a mobile entity that could be people, equipment, and other objects around. This is called «positioning». It can be classified into two types «outdoor positioning» and «indoor positioning» depending 
 on the environment. Outdoor positioning is relatively easy thanks to satellites: GPS (Global Positioning  System) but for indoor positioning, it’s another story, the determination of a position can be complicated and remains hard to handle. In fact, GPS is not suitable to establish indoor locations, since it is limited to the outside due to signal attenuation caused by obstacles. 
 
@@ -12,7 +12,7 @@ Actually, my project is treating the warehousing domain. It consists of implemen
 The tracked positions can be displayed on a map over a dashboard that helps in the monitoring task and offers many other functionalities.
 
 
- ![image](https://keep.google.com/u/2/media/v2/13LiIE73tX8sVEYqsllCg45Rr47yqMHwYDed-yzCaHuQnktwVs9eAf80MDCCWyg/1CXJQoXl9KUtrifhny7_xhAjrBIYADhod9aYiuaIm5SCvGYFpmvPCCBC9TeHy62E?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=1600)
+ ![image](https://github.com/seifoueslati/Elmouna4.0/blob/main/logo.png?raw=true)
  
 
 The purpous of this project is to conceive an indoor positioning IoT based system inside the warehouse using decawave’s nodes as IoT sensors. This involves two main phases:
@@ -22,7 +22,7 @@ The purpous of this project is to conceive an indoor positioning IoT based syste
 
 Comparison between RTLS existing systems
 
-![image](https://keep.google.com/u/2/media/v2/1GkmI7Ct2vmaKP-BJxjgQ3YbMY3WgcFj47Exhitz1SRwoRoTH1GjdxdK9E-pRkQ/1gig4ZKvCxD1Vn34aZfPP5GvCLmkys2LqFcKnWcHJS_1_YC7qJO4tVaFRHZk9SCM?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=648)
+![image](https://github.com/seifoueslati/Elmouna4.0/blob/main/tab.jpg?raw=true)
 
 ==>MDEK1001 Development Kit from DECAWAVE is the solution that will be used for the deployment of the system for this project. This choice was made after discussing with the  customer since it offers the best quality-price ratio and fits to their limited budget. 
 
@@ -35,7 +35,7 @@ The idea is to conceive an indoor positioning IoT based system inside the wareho
 ## Physical architecture 
 The figure below represents the physical architecture of the proposed solution. 
 
-![image](https://keep.google.com/u/2/media/v2/10T2sUoyEwxw_98yVSZHwE-dQUKVbMFiSVB2D1CIfsM-sAn2eBrnsrENw71dHKg/1urK87oigcmZe8GGDeK5jM1u8_LuNWmKYCU2PF5sjoOShe0KVJTdZw8dPTciIgQ?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=716)
+![image](https://github.com/seifoueslati/Elmouna4.0/blob/main/ar.jpg?raw=true)
 
 
 - Client: The web browser which allows the user to access the different interfaces of the dashboard. 
@@ -117,7 +117,9 @@ After placing the entities, we have to configure each node with the correspondin
 
 #### Nodes configuration 
 The DWM1001 module DWM1001 comes with a pre-flashed factory image of firmware. So the first step consists of flashing each node with the provided image. To do so we used « Segger J-Flash Lite » tool. 
+
 ![image](https://lh3.googleusercontent.com/oBXdHh8w7YPV98Mu_w-WPNBD2R0M68Xa70auf8R2zt2ahCU7Mgnn8alTFp8OaFKMIEuzZ7SqPVwvLYSNFJ3WHF4toLgHCfGwmK21zKzMaYf6xEMJkoSNeKxGPHq3nYCibpBn33w)
+
 ❖ Flash nodes : 
 We start by connecting the node to the computer through USB, editing the parameters as described in figure below, selecting the « DWM1001_PANS_R2. hex » image file and click on program device. 
 ❖ Configure Anchors: 
@@ -136,7 +138,9 @@ The configuration is made by serial port over UART (Universal Asynchronous Recei
 ❖ Configure Gateway: 
 - A gateway consists of a DWM1001 module configured as a «bridge node» connected to a Raspberry Pi 3 Model B card. 
 --------------------------------------------
+
 ![image](https://lh5.googleusercontent.com/khHGWuipNOtISp-z8q03GI_ly-82NmYRKeBOtMavsdcthkRyFISFo7OcAy2-t_Ip-gTEd6F17PnbJfgG5uPuqtXIisknqBSy6-zK2Thd)
+
 ➢ Bridge node setup: 
 • After creating a serial port connection and accessing to the DWM1001 UART shell mode, we use the «nmb» command to set the device as a «bridge node». 
 ➢ Raspberry Pi setup: 
@@ -161,6 +165,7 @@ once a unit is connected to the network associated with the in-range gateway and
 - 1 topic related to the gateway «dwm/gateway/id/uplink» where we can find the networkID, the bridge node ID and the proxy IP address. 
 - 2 topics related to the anchors «dwm/gateway/id/uplink/config» where we can get the position and the type (anchor or initiator), «dwm/gateway/id/uplink/status» where we can find the node state. 
 - 3 topics associated to the tags «dwm/gateway/id/uplink/config or status» and in addition «dwm/gateway/id/uplink/locate on» which is related to the tag position. 
+
 ![image](https://lh4.googleusercontent.com/ohhZvUOzATI2c-trvGoqd9XrCyyCa6xcCxbOdfGYU-26u4LuTwiJUMMJJiCYU2fLNxHT-aIhiAzFf4MdvtPB8mAnkqm7rbqUBtOPewUaD8bOgtz-A9BOXqaw6j_02PE75ITMiVY)
 
 --------------------------
