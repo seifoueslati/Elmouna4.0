@@ -11,7 +11,9 @@ Actually, my project is treating the warehousing domain. It consists of implemen
 
 The tracked positions can be displayed on a map over a dashboard that helps in the monitoring task and offers many other functionalities.
 
+
  ![image](https://keep.google.com/u/2/media/v2/13LiIE73tX8sVEYqsllCg45Rr47yqMHwYDed-yzCaHuQnktwVs9eAf80MDCCWyg/1CXJQoXl9KUtrifhny7_xhAjrBIYADhod9aYiuaIm5SCvGYFpmvPCCBC9TeHy62E?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=360)
+ 
 
 The purpous of this project is to conceive an indoor positioning IoT based system inside the warehouse using decawave’s nodes as IoT sensors. This involves two main phases:
 
@@ -19,7 +21,9 @@ The purpous of this project is to conceive an indoor positioning IoT based syste
 - Dashboard development for visualization and monitoring. The system will get IoT data sent from the placed nodes «Anchor» and the mobile object «Tag». Once the data acquired, the position calculated in real-time, will be published in the «MQTT Broker». We have to subscribe to it so we can retrieve the data and store it in the database for further processing and display the output on the dashboard.
 
 Comparison between RTLS existing systems
+
 ![image](https://keep.google.com/u/2/media/v2/1GkmI7Ct2vmaKP-BJxjgQ3YbMY3WgcFj47Exhitz1SRwoRoTH1GjdxdK9E-pRkQ/1gig4ZKvCxD1Vn34aZfPP5GvCLmkys2LqFcKnWcHJS_1_YC7qJO4tVaFRHZk9SCM?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=648)
+
 ==>MDEK1001 Development Kit from DECAWAVE is the solution that will be used for the deployment of the system for this project. This choice was made after discussing with the  customer since it offers the best quality-price ratio and fits to their limited budget. 
 
 # ELMOUNA4.0
@@ -30,7 +34,9 @@ The idea is to conceive an indoor positioning IoT based system inside the wareho
 - Dashboard development for visualization and monitoring. The system will get IoT data sent from the placed nodes «Anchor» and the mobile object «Tag». Once the data acquired, the position calculated in real-time, will be published in the «MQTT Broker». We have to subscribe to it so we can retrieve the data and store it in the database for further processing and display the output on the dashboard. 
 ## Physical architecture 
 The figure below represents the physical architecture of the proposed solution. 
+
 ![image](https://keep.google.com/u/2/media/v2/10T2sUoyEwxw_98yVSZHwE-dQUKVbMFiSVB2D1CIfsM-sAn2eBrnsrENw71dHKg/1urK87oigcmZe8GGDeK5jM1u8_LuNWmKYCU2PF5sjoOShe0KVJTdZw8dPTciIgQ?accept=image/gif,image/jpeg,image/jpg,image/png,image/webp,audio/aac&sz=716)
+
 
 - Client: The web browser which allows the user to access the different interfaces of the dashboard. 
 - FrontEnd AppServer: hosts the frontend application used by end-users. 
@@ -45,7 +51,9 @@ convenient query and send back the needed data to it.
 
 ## Logical architecture 
 The figure describes the logical architecture of the proposed solution. 
+
 ![image](https://lh3.googleusercontent.com/uEYvLz8TK0j7r6CP7J8SpX-wxSLHGdWrxBhNmaI89jCYzMxNFNe1ICxz7o-yN6QvEkHGaNMhkuv1O8cJbs4JoHaS0pBO1m1Hcx4Ub8HezIaJqW9pE6kmMy6BD3ZVn_Vztpi53W8)
+
 
 - UWB RTLS network: 
 The network is made up of decawave’s modules which can be configured to behave as «anchors», fixed nodes in the system, «tags» which are mobile nodes, or « bridge nodes » which has to be associated to a « Raspberry pi 3 Model B card » to form a « Gateway» (MQTT Broker) that route the data within the UWB network. One anchor has to be configured as an «initiator» which will start, control and synchronize the network. 
@@ -75,15 +83,21 @@ There are five basic position measurement methods used in IPSs to determinate th
 ##### Time of Arrival (TOA): 
 TOA, which is also known as Time of Flight (TOF), is the simplest and most common ranging technique. It consists of measuring the time it takes for the radio signal sent by the transmitter to arrive at the receiver. The initiator transmits a radio message to the responder and records its time of transmission t1. The responder receives the message and transmits a response back to the initiator after a particular delay treply. The initiator then receives this response and records a receive timestamp  . 
 This is done by synchronizing the transmitters and the receiver's clock. The TOF is then calculated by this formula: 
+
 ![image](https://lh4.googleusercontent.com/av6Z0Yzcv4jQrERT9EQy_McF53DoUvPDI9iJeNB1vwgbBcVgP-QYCT69TTluay5CMADHDSF8CQ7KHefxMo3WgJKTqO59kxcQXhw1gFZvwEkxseLpG-ONv-omrUbw7zxOoIGNqdk)
+
 According to this, the distance can be calculated due to the known speed of the radio signal, which is the same as the speed of light “C”As it is shown in the figure below, TOA is based on the intersection of circles for multiple transmitters (minimum three). The radius of those circles is the distance between the transmitter and the receiver. 
+
 ![image](https://lh4.googleusercontent.com/CD4H3n0gFOtRlVoq_QoLD_nngXAkW2aq_BjS8V8Qz8EX9F74x42uT6A0a1VNlTNZLw5XPWMEyRYqq_uR-2eDt8Pf7_c-fybd3QathktYz1x8vHqFAz7zVfkW_6oEKSGtbbBSimc)
+
 
 ##### Time Difference of Arrival (TDOA): 
 
 
 TDOA is based on measuring the time difference of arrival of a signal sent by an object and received by three or more receivers to calculate the distance. Each difference of arrival time measurement produces a hyperbolic curve in the localization space on which the location of the mobile node lies. 
+
 ![image](https://lh5.googleusercontent.com/zAKeFwj1zrD2QrVAou12LX6SEU93QMwBL6GhcTc04qHnSM3FiKA37UsFp3xY4BayFYF-yfSQFHnTTJPaofSYUBW-eihJakRtzHNhFKSpdB9yfFZOx9oMldmYI8znaqo1jkhXWEs)
+
 ##### Angle of Arrival (AOA): 
 AOA is the angle and distance calculated relative to two (at least) or multiple references (for better accuracy) with known location through the intersection of direction lines between the reference points. 
 
