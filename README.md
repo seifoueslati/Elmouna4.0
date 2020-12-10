@@ -1,6 +1,12 @@
 # ElMouna4.0
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 With the rise of nomadism and mobility, a strong need for localization emerged and became an active research field. Localization consists of determining positions of a mobile entity that could be people, equipment, and other objects around. This is called «positioning». It can be classified into two types «outdoor positioning» and «indoor positioning» depending 
