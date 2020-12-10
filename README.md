@@ -217,6 +217,17 @@ This is the matrix that i did for creating the map , each 0 refers to an open sp
 i used the A* algorithme . A* is a graph traversal and path search algorithm, which is often used in many fields of computer science due to its completeness, optimality, and optimal efficiency. One major practical drawback is its space complexity, as it stores all generated nodes in memory.
 
 ------------------------------------------------------------------------------------------
+ <h1> <p align="center">
+    Elmouna4.0 2019/2020
+    <br />
+    <a href="https://www.linkedin.com/in/seif-oueslati-212840134/"><strong>My Linkedin</strong></a>
+    <br />
+    <br />
+   <a href="https://drive.google.com/file/d/1D1Ddr9j0IVEz1UrKeFOZToUXGxq5q0dy/view?usp=sharing">View Demo</a>
+    ·
+    <a href="https://drive.google.com/file/d/1RKY14AvIPLlwGabj7hZCkPybK6mfbUPq/view?usp=sharing">View com vid</a>
+    
+  </p>
 
-
+</h1>
 
