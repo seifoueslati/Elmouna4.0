@@ -1,9 +1,9 @@
 # ElMouna4.0
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Elmouna4.0 2019/2020
     <br />
-    <a href="https://www.linkedin.com/in/seif-oueslati-212840134/"><strong>My Linkedin »</strong></a>
+    <a href="https://www.linkedin.com/in/seif-oueslati-212840134/"><strong>My Linkedin</strong></a>
     <br />
     <br />
     <a href="https://drive.google.com/file/d/1D1Ddr9j0IVEz1UrKeFOZToUXGxq5q0dy/view?usp=sharing">View Demo</a>
